@@ -1,0 +1,244 @@
+@mixin myFontStyle {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    height: 100%;
+    background-color: rgb(200, 176, 245);
+    background-image:
+        radial-gradient(ellipse at 50% 45%,
+            transparent 100px,
+            rgb(200, 176, 245) 100px),
+        radial-gradient(ellipse at 50% 55%,
+            transparent 100px,
+            rgb(200, 176, 245) 100px),
+        radial-gradient(circle,
+            #222 20px,
+            white 20px,
+            white 40px,
+            transparent 0),
+        radial-gradient(#222 150px,
+            transparent);
+    background-size:
+        500px 250px,
+        500px 250px,
+        100px 100px,
+        500px 250px;
+
+    background-position:
+        50% 50%,
+        50% 50%,
+        50% 50%,
+        50% 50%;
+
+    background-repeat: no-repeat;
+
+    animation: 5s distress infinite linear;
+}
+
+
+body {
+    @include myFontStyle;
+
+    @keyframes distress {
+        0% {
+            background-position:
+                50% 50%,
+                50% 50%,
+                calc(50% - 80px) 50%;
+        }
+
+        10% {
+            background-position:
+                50% 50%,
+                50% 50%,
+                calc(50% + 80px) 50%;
+        }
+
+        20% {
+            background-position:
+                50% 50%,
+                50% 50%,
+                50% calc(50% - 50px);
+        }
+
+        30% {
+            background-position:
+                50% 50%,
+                50% 50%,
+                50% calc(50% - 50px);
+        }
+
+        40% {
+            background-position:
+                50% 50%,
+                50% 50%,
+                calc(50% - 50px) calc(50% - 50px);
+        }
+
+        50% {
+            background-position:
+                50% 50%,
+                50% 50%,
+                calc(50% + 50px) calc(50% + 50px);
+        }
+
+        60% {
+            background-position:
+                50% 50%,
+                50% 50%,
+                calc(50% + 50px) calc(50% + 50px);
+        }
+
+        70% {
+            background-position:
+                50% 50%,
+                50% 50%,
+                calc(50% + 80px) 50%;
+        }
+
+        80% {
+            background-position:
+                50% 50%,
+                50% 50%,
+                calc(50% + 80px) calc(50% + 50px);
+        }
+
+        90% {
+            background-position:
+                50% 50%,
+                50% 50%,
+                calc(50% - 80px) 50%;
+        }
+
+        100% {
+            background-position:
+                50% 50%,
+                50% 50%,
+                calc(50% - 80px) 50%;
+        }
+    }
+
+    .titre {
+        text-align: center;
+    }
+
+    .infoPerso {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: solid black;
+        position: relative;
+        bottom: 3rem;
+    }
+
+    .experiencesPro {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        border: solid black;
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+        position: relative;
+        bottom: 15rem;
+        left: 27rem;
+    }
+
+    .informationFormationAFPA {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        border: solid black;
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+        position: relative;
+        float: right;
+        bottom: 16rem;
+
+        .formationAPFA {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+        }
+    }
+
+
+    .informationFormationINCO {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        border: solid black;
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+        position: relative;
+        float: right;
+        bottom: 16rem;
+
+        .formationINCO {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: fit-content;
+        }
+
+
+    }
+
+    .competencesTechniques {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        border: solid black;
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+        position: relative;
+        bottom: 59rem;
+        float: right;
+        left: 33rem;
+
+    }
+
+    .competencesProEtPerso {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        border: solid black;
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+        position: relative;
+        bottom: 5rem;
+        left: 5rem;
+    }
+
+    .centreInteret {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        border: solid black;
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+        position: relative;
+        left: 19rem;
+    }
+
+    footer {
+        position: relative;
+        top: 9rem;
+        width: max-content;
+        margin: 0 auto;
+
+        p {
+            text-align: center;
+        }
+    }
+}

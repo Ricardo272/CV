@@ -1,0 +1,165 @@
+html {
+  height: 100%;
+  background-color: rgb(200, 176, 245);
+  background-image: radial-gradient(ellipse at 50% 45%, transparent 100px, rgb(200, 176, 245) 100px), radial-gradient(ellipse at 50% 55%, transparent 100px, rgb(200, 176, 245) 100px), radial-gradient(circle, #222 20px, white 20px, white 40px, transparent 0), radial-gradient(#222 150px, transparent);
+  background-size: 500px 250px, 500px 250px, 100px 100px, 500px 250px;
+  background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  background-repeat: no-repeat;
+  animation: 5s distress infinite linear;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+@keyframes distress {
+  0% {
+    background-position: 50% 50%, 50% 50%, calc(50% - 80px) 50%;
+  }
+  10% {
+    background-position: 50% 50%, 50% 50%, calc(50% + 80px) 50%;
+  }
+  20% {
+    background-position: 50% 50%, 50% 50%, 50% calc(50% - 50px);
+  }
+  30% {
+    background-position: 50% 50%, 50% 50%, 50% calc(50% - 50px);
+  }
+  40% {
+    background-position: 50% 50%, 50% 50%, calc(50% - 50px) calc(50% - 50px);
+  }
+  50% {
+    background-position: 50% 50%, 50% 50%, calc(50% + 50px) calc(50% + 50px);
+  }
+  60% {
+    background-position: 50% 50%, 50% 50%, calc(50% + 50px) calc(50% + 50px);
+  }
+  70% {
+    background-position: 50% 50%, 50% 50%, calc(50% + 80px) 50%;
+  }
+  80% {
+    background-position: 50% 50%, 50% 50%, calc(50% + 80px) calc(50% + 50px);
+  }
+  90% {
+    background-position: 50% 50%, 50% 50%, calc(50% - 80px) 50%;
+  }
+  100% {
+    background-position: 50% 50%, 50% 50%, calc(50% - 80px) 50%;
+  }
+}
+body .titre {
+  text-align: center;
+}
+body .infoPerso {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: solid black;
+  position: relative;
+  bottom: 3rem;
+}
+body .experiencesPro {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: solid black;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  bottom: 15rem;
+  left: 27rem;
+}
+body .informationFormationAFPA {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: solid black;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  float: right;
+  bottom: 16rem;
+}
+body .informationFormationAFPA .formationAPFA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .informationFormationINCO {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: solid black;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  float: right;
+  bottom: 16rem;
+}
+body .informationFormationINCO .formationINCO {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .competencesTechniques {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: solid black;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  bottom: 59rem;
+  float: right;
+  left: 33rem;
+}
+body .competencesProEtPerso {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: solid black;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  bottom: 5rem;
+  left: 5rem;
+}
+body .centreInteret {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: solid black;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  position: relative;
+  left: 19rem;
+}
+body footer {
+  position: relative;
+  top: 9rem;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+body footer p {
+  text-align: center;
+}/*# sourceMappingURL=Style.css.map */
