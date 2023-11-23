@@ -71,8 +71,8 @@ body .experiencesPro {
   margin: 1rem;
   padding: 1rem;
   position: relative;
-  bottom: 15rem;
-  left: 27rem;
+  bottom: 14rem;
+  left: 29rem;
 }
 body .informationFormationAFPA {
   display: flex;
@@ -85,7 +85,7 @@ body .informationFormationAFPA {
   padding: 1rem;
   position: relative;
   float: right;
-  bottom: 16rem;
+  top: 13rem;
 }
 body .informationFormationAFPA .formationAPFA {
   display: flex;
@@ -105,7 +105,7 @@ body .informationFormationINCO {
   padding: 1rem;
   position: relative;
   float: right;
-  bottom: 16rem;
+  bottom: 8rem;
 }
 body .informationFormationINCO .formationINCO {
   display: flex;
@@ -124,7 +124,7 @@ body .competencesTechniques {
   margin: 1rem;
   padding: 1rem;
   position: relative;
-  bottom: 59rem;
+  bottom: 52rem;
   float: right;
   left: 33rem;
 }
@@ -138,8 +138,8 @@ body .competencesProEtPerso {
   margin: 1rem;
   padding: 1rem;
   position: relative;
-  bottom: 5rem;
-  left: 5rem;
+  bottom: 41rem;
+  left: 6rem;
 }
 body .centreInteret {
   display: flex;
@@ -152,13 +152,14 @@ body .centreInteret {
   padding: 1rem;
   position: relative;
   left: 19rem;
+  bottom: 40rem;
 }
 body footer {
   position: relative;
-  top: 9rem;
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto;
+  bottom: 5rem;
 }
 body footer p {
   text-align: center;
