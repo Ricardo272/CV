@@ -4,14 +4,14 @@
 
 html {
     height: 100%;
-    background-color: rgb(200, 176, 245);
+    background-color: #053C5E;
     background-image:
         radial-gradient(ellipse at 50% 45%,
             transparent 100px,
-            rgb(200, 176, 245) 100px),
+            #053C5E 100px),
         radial-gradient(ellipse at 50% 55%,
             transparent 100px,
-            rgb(200, 176, 245) 100px),
+            #053C5E 100px),
         radial-gradient(circle,
             #222 20px,
             white 20px,
@@ -36,8 +36,12 @@ html {
     animation: 5s distress infinite linear;
 }
 
-
 body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
     @include myFontStyle;
 
     @keyframes distress {
@@ -119,57 +123,97 @@ body {
         }
     }
 
-    .titre {
-        text-align: center;
-    }
-
-    .infoPerso {
+    .titreEtInfoPerso {
         display: flex;
         flex-direction: column;
-        width: fit-content;
-        margin: 1rem;
-        padding: 1rem;
-        border-radius: 2rem;
-        border: solid black;
-        position: relative;
-        bottom: 3rem;
-    }
+        align-items: center;
 
-    .experiencesPro {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        border: solid black;
-        border-radius: 1rem;
-        margin: 1rem;
-        padding: 1rem;
-        position: relative;
-        bottom: 14rem;
-        left: 29rem;
-    }
+        .titre {
+            background: radial-gradient(circle, #43afc4, #AC3843);
+            text-align: center;
+            font-size: 2rem;
+            height: -webkit-fill-available;
+            border: solid;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
 
-    .informationFormationAFPA {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        border: solid black;
-        border-radius: 1rem;
-        margin: 1rem;
-        padding: 1rem;
-        position: relative;
-        float: right;
-        top: 13rem;
-
-        .formationAPFA {
+        .infoPerso {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            width: fit-content;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 2rem;
+            border: solid black;
+            background: radial-gradient(circle, #43afc4, #AC3843);
+        }
+    }
+
+    .experiencesProEtCompetencesTechniques {
+        display: flex;
+        height: -webkit-fill-available;
+        width: fit-content;
+        align-self: center;
+
+        .experiencesPro {
+            background: radial-gradient(circle, #43afc4, #AC3843);
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            border: solid black;
+            border-radius: 1rem;
+            margin: 1rem;
+            padding: 1rem;
+            height: -webkit-fill-available;
+        }
+
+        .competencesTechniques {
+            background: radial-gradient(circle, #43afc4, #AC3843);
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            border: solid black;
+            border-radius: 1rem;
+            margin: 1rem;
+            padding: 1rem;
+            background: radial-gradient(circle, #B1798C, #A31621)
+        }
+    }
+
+
+
+
+    .formationAFPA {
+        background: radial-gradient(circle, #43afc4, #AC3843);
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        border: solid black;
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+
+        h2 {
+            width: fit-content;
+        }
+
+        h3 {
+            width: fit-content;
+        }
+
+        p {
             width: fit-content;
         }
     }
 
 
-    .informationFormationINCO {
+
+
+
+
+    .formationINCO {
+        background: radial-gradient(circle, #43afc4, #AC3843);
         display: flex;
         flex-direction: column;
         width: fit-content;
@@ -177,36 +221,15 @@ body {
         border-radius: 1rem;
         margin: 1rem;
         padding: 1rem;
-        position: relative;
-        float: right;
-        bottom: 8rem;
-
-        .formationINCO {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: fit-content;
-        }
-
-
     }
 
-    .competencesTechniques {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        border: solid black;
-        border-radius: 1rem;
-        margin: 1rem;
-        padding: 1rem;
-        position: relative;
-        bottom: 52rem;
-        float: right;
-        left: 33rem;
 
-    }
+
+
+
 
     .competencesProEtPerso {
+        background: radial-gradient(circle, #43afc4, #AC3843);
         display: flex;
         flex-direction: column;
         width: fit-content;
@@ -214,12 +237,10 @@ body {
         border-radius: 1rem;
         margin: 1rem;
         padding: 1rem;
-        position: relative;
-        bottom: 41rem;
-        left: 6rem;
     }
 
     .centreInteret {
+        background: radial-gradient(circle, #43afc4, #AC3843);
         display: flex;
         flex-direction: column;
         width: fit-content;
@@ -227,16 +248,16 @@ body {
         border-radius: 1rem;
         margin: 1rem;
         padding: 1rem;
-        position: relative;
-        left: 19rem;
-        bottom: 40rem;
+
     }
 
     footer {
-        position: relative;
+        background: radial-gradient(circle, #43afc4, #AC3843);
+        border: solid;
+        padding: 1rem;
+        border-radius: 1rem;
         width: max-content;
         margin: 0 auto;
-        bottom: 5rem;
 
         p {
             text-align: center;
