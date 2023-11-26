@@ -115,6 +115,8 @@ body .formationAFPA {
   border-radius: 1rem;
   margin: 1rem;
   padding: 1rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 body .formationAFPA h2 {
   width: -moz-fit-content;
